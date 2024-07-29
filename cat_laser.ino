@@ -12,7 +12,7 @@ void setup() {
 
 void loop() {
   // Mover o servo de forma aleatória
-  int servoPosition = random(50, 110); // Gera uma posição aleatória entre 20 e 120 graus
+  int servoPosition = random(50, 110); // Gera uma posição aleatória entre 50 e 110 graus
   servo.write(servoPosition); // Move o servo para a posição aleatória
   delay(random(300, 1200)); // Espera um tempo aleatório entre 300ms e 1200ms
 
@@ -20,5 +20,5 @@ void loop() {
   int randomValue = random(0, 10); // Gera um valor aleatório entre 0 e 9
   int laserState = (randomValue < 9) ? HIGH : LOW; // 90% de chance de ser HIGH, 10% de chance de ser LOW
   digitalWrite(laserPin, laserState); // Liga ou desliga o laser com base no valor aleatório
-  delay(random(300, 2000)); // Espera um tempo aleatório entre 300ms e 600ms
+  delay(random(300, 2000)); // Espera um tempo aleatório entre 300ms e 2000ms
 }
